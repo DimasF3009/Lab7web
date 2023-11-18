@@ -1,6 +1,6 @@
 # Lab7web
 
-# Cetak hello world
+## Cetak hello world
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +17,10 @@
 </body>
 </html>
 ```
+### Outoput
+![hello world](https://github.com/DimasF3009/Lab7web/assets/115356128/db74d77b-4ff8-4641-9e395bf32067d88b)
 
-# VAR PHP
+## VAR PHP
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -41,6 +43,8 @@
 </body>
 </html>
 ```
+### Outoput
+![variable](https://github.com/DimasF3009/Lab7web/assets/115356128/9b264827-af23-4037-ac93-cf01e9695180)
 
 # Predefine Variable $_GET
 ```
@@ -59,6 +63,8 @@
 </body>
 </html>
 ```
+### Outoput
+![variable get](https://github.com/DimasF3009/Lab7web/assets/115356128/e1ff1ebe-301e-4899-8fbd-c25f127f2324)
 
 # FORM
 ```
@@ -82,6 +88,8 @@
 </body>
 </html>
 ```
+### Outoput
+![form input](https://github.com/DimasF3009/Lab7web/assets/115356128/b6332e72-bcb6-4d5c-954b-5f22f14468f8)
 
 # operator 
 ```
@@ -103,6 +111,8 @@
 </body>
 </html>
 ```
+### Outoput
+![operator](https://github.com/DimasF3009/Lab7web/assets/115356128/527197c2-cd09-43aa-a3ca-9d9a4bba764c)
 
 # if else
 ```
@@ -127,6 +137,8 @@
 </body>
 </html>
 ```
+### Outoput
+![if else](https://github.com/DimasF3009/Lab7web/assets/115356128/087b4ef0-1e48-439d-a3fb-9a46f7c201ad)
 
 # Switch
 ```
@@ -157,6 +169,8 @@
 </body>
 </html>
 ```
+### Outoput
+![switch](https://github.com/DimasF3009/Lab7web/assets/115356128/d1f77072-ea44-489b-896b-b7cc322e6b33)
 
 # Looping FOR
 ```
@@ -181,6 +195,8 @@
 </body>
 </html>
 ```
+### Outoput
+![for](https://github.com/DimasF3009/Lab7web/assets/115356128/fb7c7887-b8b7-43c4-887c-10340f1dd771)
 
 # Looping while
 ```
@@ -203,6 +219,8 @@
 </body>
 </html>
 ```
+### Outoput
+![while](https://github.com/DimasF3009/Lab7web/assets/115356128/782936e4-e595-470e-becc-1df29fc4ced8)
 
 # Looping dowhile
 ```
@@ -225,3 +243,5 @@
 </body>
 </html>
 ```
+### Outoput
+![dowhile](https://github.com/DimasF3009/Lab7web/assets/115356128/4063f99d-23a4-455f-af0a-e8cdeb3eeeb0)
