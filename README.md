@@ -245,3 +245,82 @@
 ```
 ### Output
 ![dowhile](https://github.com/DimasF3009/Lab7web/assets/115356128/4063f99d-23a4-455f-af0a-e8cdeb3eeeb0)
+
+
+# Tugas Membuat form sederhana
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input PHP</title>
+</head>
+<body>
+
+<?php
+// Fungsi untuk menghitung umur berdasarkan tanggal lahir
+function hitungUmur($tanggal_lahir) {
+    $tanggal_lahir = new DateTime($tanggal_lahir);
+    $sekarang = new DateTime('today');
+    $umur = $sekarang->diff($tanggal_lahir);
+    return $umur->y;
+}
+
+// Daftar pekerjaan beserta gaji
+$pekerjaan = array(
+    'Programmer' => 5000000,
+    'Desainer' => 4500000,
+    'Marketing' => 4000000,
+    'Manajer' => 6000000
+);
+
+// Inisialisasi variabel
+$nama = '';
+$tanggal_lahir = '';
+$pekerjaan_selected = '';
+$gaji = 0;
+
+// Pengecekan apakah form sudah di-submit
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Mengambil nilai dari form
+    $nama = $_POST['nama'];
+    $tanggal_lahir = $_POST['tanggal_lahir'];
+    $pekerjaan_selected = $_POST['pekerjaan'];
+
+    // Validasi input
+    if (empty($nama) || empty($tanggal_lahir) || empty($pekerjaan_selected)) {
+        echo "Semua field harus diisi!";
+    } else {
+        // Menghitung umur berdasarkan tanggal lahir
+        $umur = hitungUmur($tanggal_lahir);
+
+        // Mengambil gaji berdasarkan pekerjaan
+        $gaji = $pekerjaan[$pekerjaan_selected];
+
+        // Menampilkan output
+        echo "Nama: $nama <br>";
+        echo "Umur: $umur tahun <br>";
+        echo "Pekerjaan: $pekerjaan_selected <br>";
+        echo "Gaji: Rp " . number_format($gaji, 0, ',', '.') . "<br>";
+    }
+}
+?>
+
+<!-- Form input -->
+<form method="post" action="">
+    Nama: <input type="text" name="nama" value="<?php echo $nama; ?>"><br>
+    Tanggal Lahir: <input type="date" name="tanggal_lahir" value="<?php echo $tanggal_lahir; ?>"><br>
+    Pekerjaan:
+    <select name="pekerjaan">
+        <option value="Programmer" <?php echo ($pekerjaan_selected == 'Programmer') ? 'selected' : ''; ?>>Programmer</option>
+        <option value="Desainer" <?php echo ($pekerjaan_selected == 'Desainer') ? 'selected' : ''; ?>>Desainer</option>
+        <option value="Marketing" <?php echo ($pekerjaan_selected == 'Marketing') ? 'selected' : ''; ?>>Marketing</option>
+        <option value="Manajer" <?php echo ($pekerjaan_selected == 'Manajer') ? 'selected' : ''; ?>>Manajer</option>
+    </select><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+```
+### Output
+![tugas](https://github.com/DimasF3009/Lab7web/assets/115356128/ca980c57-fdb4-49b2-ae3e-8c4a5908d1f7)
